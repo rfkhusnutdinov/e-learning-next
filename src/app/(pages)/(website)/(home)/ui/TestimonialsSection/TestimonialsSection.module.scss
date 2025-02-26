@@ -1,0 +1,44 @@
+.root {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.top {
+  display: flex;
+  gap: 30px;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.top-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+  max-width: 1180px;
+}
+
+.top-title {
+  color: var(--color-grey-15);
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.top-text {
+}
+
+.top-button {
+  flex-shrink: 0;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  list-style: none;
+
+  &-item {
+    display: flex;
+  }
+}

@@ -1,0 +1,45 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  background: var(--color-absolute-white);
+  border: 1px solid var(--color-white-95);
+  border-radius: 12px;
+}
+
+.text {
+  flex-grow: 1;
+  padding: 50px;
+  color: var(--color-grey-30);
+}
+
+.bottom {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  background: var(--color-white-99);
+  border-top: 1px solid var(--color-white-95);
+}
+
+.author {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  &-avatar {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+  }
+
+  &-name {
+    color: var(--color-grey-20);
+    font-weight: 600;
+    line-height: 150%;
+  }
+}

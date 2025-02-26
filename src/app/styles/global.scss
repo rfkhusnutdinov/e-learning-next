@@ -19,6 +19,7 @@ body {
   min-height: 100%;
   color: var(--page-text-color);
   font: var(--font-body);
+  background-color: var(--page-background);
   scrollbar-gutter: stable;
   scroll-behavior: inherit;
 }
