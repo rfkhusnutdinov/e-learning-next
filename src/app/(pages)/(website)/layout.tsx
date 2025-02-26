@@ -1,7 +1,10 @@
-import "../styles/main.scss";
+import "@/app/styles/main.scss";
 
 import type { Metadata } from "next";
 import { Be_Vietnam_Pro } from "next/font/google";
+
+import { Footer } from "@/widgets/ui/Footer";
+import { Header } from "@/widgets/ui/Header";
 
 const beVietnamPro = Be_Vietnam_Pro({
   variable: "--font-be-vietnam-pro",
@@ -20,8 +23,12 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${beVietnamPro.variable}`}>{children}</body>
+    <html lang="en" className={`${beVietnamPro.variable}`}>
+      <body>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

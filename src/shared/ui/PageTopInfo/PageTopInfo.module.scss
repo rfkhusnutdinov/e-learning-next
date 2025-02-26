@@ -1,0 +1,33 @@
+.root {
+  position: relative;
+  padding-top: 109px;
+  padding-bottom: 50px;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: calc(100% - var(--container-padding) * 2);
+    height: 1px;
+    background-color: var(--color-white-90);
+    transform: translateX(-50%);
+    content: "";
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  align-items: center;
+}
+
+.title {
+  color: var(--color-grey-15);
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.description {
+}
