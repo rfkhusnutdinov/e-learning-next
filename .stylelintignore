@@ -1,0 +1,5 @@
+# Ignore all files of project except .vue, .scss, .css files inside src/
+/**.*
+!src/**/*.vue
+!src/**/*.css
+!src/**/*.scss
