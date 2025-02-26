@@ -1,0 +1,42 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 24px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, opacity 0.3s, border-color 0.3s;
+
+  &--primary {
+    color: var(--color-absolute-white);
+    background-color: var(--color-orange-50);
+
+    &:hover {
+      background-color: var(--color-orange-70);
+    }
+  }
+
+  &--secondary {
+    color: var(--color-grey-15);
+    background-color: var(--color-absolute-white);
+    border-color: var(--color-white-95);
+
+    &:hover {
+      background-color: var(--color-white-95);
+    }
+  }
+
+  &--tertiary {
+    color: var(--color-grey-15);
+    background-color: var(--color-white-97);
+    border-color: var(--color-white-95);
+
+    &:hover {
+      background-color: var(--color-white-90);
+    }
+  }
+}
